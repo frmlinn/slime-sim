@@ -1,0 +1,88 @@
+/** * Global reset and responsive baseline
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: sans-serif;
+    overflow: hidden; /* Prevent scrollbars */
+    touch-action: none; /* Disable default browser touch actions (pan, zoom) for mobile responsiveness */
+}
+
+/** * Fullscreen WebGL Canvas 
+ */
+#glcanvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    cursor: crosshair;
+}
+
+/** * FPS and Info Overlay
+ */
+#info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: monospace;
+    pointer-events: none; /* Allow clicks to pass through to the canvas */
+    text-shadow: 1px 1px 2px black;
+    z-index: 10;
+}
+
+/** * Custom Tweakpane Theme Variables 
+ */
+:root {
+    --tp-base-background-color: hsla(230, 10%, 15%, 0.8);
+    --tp-base-shadow-color: hsla(0, 0%, 0%, 0.5);
+}
+
+#ui-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 20;
+    padding: 8px 12px;
+    background: rgba(20, 20, 30, 0.8);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: sans-serif;
+    display: none; /* Oculto por defecto en escritorio */
+}
+
+#ui-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 15;
+}
+
+@media (max-width: 768px) {
+    #ui-toggle {
+        display: block;
+    }
+
+    #ui-container {
+        top: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(10, 10, 15, 0.95);
+        padding: 60px 15px 20px 15px;
+        overflow-y: auto; 
+        --tp-base-width: 100%; 
+        transition: opacity 0.3s ease, visibility 0.3s;
+    }
+
+    #ui-container.hidden-mobile {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
