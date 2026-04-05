@@ -248,9 +248,9 @@ uiToggleBtn.addEventListener('click', () => {
     uiContainer.classList.toggle('hidden-mobile');
 
     if (uiContainer.classList.contains('hidden-mobile')) {
-        uiToggleBtn.innerText = '⚙️ Controls';
+        uiToggleBtn.innerText = 'Controls';
     } else {
-        uiToggleBtn.innerText = '❌ Close';
+        uiToggleBtn.innerText = 'Close';
     }
 });
 
@@ -283,36 +283,36 @@ fColor.addBinding(PARAMS, 'color2', { label: 'Sp. 2 (Gold)' });
 fColor.addBinding(PARAMS, 'bgColor', { label: 'Background' });
 
 // Tab 2: DNA
-const sp0 = tabs.pages[1].addFolder({ title: '🌸 Species 0 (Pink)' });
+const sp0 = tabs.pages[1].addFolder({ title: 'Species 0 (Pink)' });
 sp0.addBinding(PARAMS, 'sp0_angle', { min: 0, max: 120, label: 'Sensor Angle' });
 sp0.addBinding(PARAMS, 'sp0_dist', { min: 1, max: 50, label: 'Sensor Dist' });
 sp0.addBinding(PARAMS, 'sp0_turn', { min: 0.01, max: 1.0, label: 'Turn Agility' });
 sp0.addBinding(PARAMS, 'sp0_speed', { min: 0.5, max: 5.0, label: 'Speed' });
 
-const sp1 = tabs.pages[1].addFolder({ title: '🌊 Species 1 (Cyan)' });
+const sp1 = tabs.pages[1].addFolder({ title: 'Species 1 (Cyan)' });
 sp1.addBinding(PARAMS, 'sp1_angle', { min: 0, max: 120, label: 'Sensor Angle' });
 sp1.addBinding(PARAMS, 'sp1_dist', { min: 1, max: 50, label: 'Sensor Dist' });
 sp1.addBinding(PARAMS, 'sp1_turn', { min: 0.01, max: 1.0, label: 'Turn Agility' });
 sp1.addBinding(PARAMS, 'sp1_speed', { min: 0.5, max: 5.0, label: 'Speed' });
 
-const sp2 = tabs.pages[1].addFolder({ title: '☀️ Species 2 (Gold)' });
+const sp2 = tabs.pages[1].addFolder({ title: 'Species 2 (Gold)' });
 sp2.addBinding(PARAMS, 'sp2_angle', { min: 0, max: 120, label: 'Sensor Angle' });
 sp2.addBinding(PARAMS, 'sp2_dist', { min: 1, max: 50, label: 'Sensor Dist' });
 sp2.addBinding(PARAMS, 'sp2_turn', { min: 0.01, max: 1.0, label: 'Turn Agility' });
 sp2.addBinding(PARAMS, 'sp2_speed', { min: 0.5, max: 5.0, label: 'Speed' });
 
 // Tab 3: Symbiosis
-const m0 = tabs.pages[2].addFolder({ title: '🌸 How Pink feels about:' });
+const m0 = tabs.pages[2].addFolder({ title: 'How Pink feels about:' });
 m0.addBinding(PARAMS, 'm00', { min: -1, max: 1, label: 'Itself' });
 m0.addBinding(PARAMS, 'm01', { min: -1, max: 1, label: 'Cyan' });
 m0.addBinding(PARAMS, 'm02', { min: -1, max: 1, label: 'Gold' });
 
-const m1 = tabs.pages[2].addFolder({ title: '🌊 How Cyan feels about:' });
+const m1 = tabs.pages[2].addFolder({ title: 'How Cyan feels about:' });
 m1.addBinding(PARAMS, 'm10', { min: -1, max: 1, label: 'Pink' });
 m1.addBinding(PARAMS, 'm11', { min: -1, max: 1, label: 'Itself' });
 m1.addBinding(PARAMS, 'm12', { min: -1, max: 1, label: 'Gold' });
 
-const m2 = tabs.pages[2].addFolder({ title: '☀️ How Gold feels about:' });
+const m2 = tabs.pages[2].addFolder({ title: 'How Gold feels about:' });
 m2.addBinding(PARAMS, 'm20', { min: -1, max: 1, label: 'Pink' });
 m2.addBinding(PARAMS, 'm21', { min: -1, max: 1, label: 'Cyan' });
 m2.addBinding(PARAMS, 'm22', { min: -1, max: 1, label: 'Itself' });
