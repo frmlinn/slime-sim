@@ -2,6 +2,8 @@
 
 # GPGPU Slime Mold Simulation
 
+![GPGPU Slime Mold Simulation](docs/slimes.gif)
+
 The idea for this project stems from a single question: is it possible to efficiently and organically find the optimal path between multiple points in multi-agent systems? When thinking about it, the concept that immediately comes to mind is the 'hive mind'. While colony-based optimization algorithms are a well-known standard, I wanted to take them to the 'next level' visually through various computer graphics techniques. From this premise arises a multi-agent simulation computed and rendered entirely on the GPU.
 
 ## Technical Overview

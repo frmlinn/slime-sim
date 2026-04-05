@@ -2,6 +2,8 @@
 
 # Simulación de Slime Mold mediante GPGPU
 
+![GPGPU Slime Mold Simulation](docs/slimes.gif)
+
 La idea de este proyecto nace de una pregunta: ¿es posible encontrar, de forma eficiente y orgánica, la ruta óptima entre múltiples puntos en sistemas de multiples individuos? Al pensar en ello, el concepto que inmediatamente te viene a la cabeza es la 'mente de enjambre'. Si bien los algoritmos de optimización basados en colonias son un estándar conocido, he querido llevarlos a un "siguiente nivel" visual por medio de distintas técnicas de computación gráfica. De esta premisa surge una simulación multi-agente calculada y renderizada en su totalidad por la GPU.
 
 
