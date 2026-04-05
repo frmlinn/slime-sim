@@ -43,8 +43,7 @@ Para renderizar el mapa de densidad plano como un fluido viscoso tridimensional,
 ---
 
 ## Funcionalidades y Controles
-
-Podemos manipular en tiempo real las variables subyacentes desde el panel de control.
+Para este proyecto no quería destinar demasiado tiempo en construir la UI para el monitor, así que quise darle una oportunidad a la librería de `tweakpane` y así poder ajustar el valor de todas las variables subyacentes. No es el estilo al que estoy acostumbrado, pero agilizó mucho el testeo durante el desarrollo, así que bastante contento con los resultados.
 
 ### Entorno Global
 - **Difusión:** Factor de interpolación entre el rastro definido y el rastro desenfocado.

@@ -42,8 +42,7 @@ To render the flat density map as a gelatinous, volumetric fluid, the display sh
 ---
 
 ## Features & Controls
-
-The simulation features a responsive UI powered by Tweakpane, allowing real-time manipulation of the underlying mathematical variables.
+For this project I didn't want to spend too much time on doing the UI for the controls monitor, so I gave `tweakpane` a try to manage the real-time manipulation of the mathematical variables. Not the style I am used to, but quite happy with the results.
 
 ### Global Environment
 - **Diffusion:** Interpolation factor between the raw trail and the blurred trail.
