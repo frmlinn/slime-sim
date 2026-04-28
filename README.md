@@ -1,5 +1,3 @@
-*Read this in other languages: [English](README.md), [Español](README.es.md).*
-
 # GPGPU Slime Mold Simulation
 
 ![GPGPU Slime Mold Simulation](docs/slimes.png)
